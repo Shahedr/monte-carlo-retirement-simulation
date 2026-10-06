@@ -14,8 +14,11 @@ For the current version I use:
 - time horizon: **20 years**
 - simulations per scenario: **10,000**
 - annual contribution scenarios: **$12K, $18K, $24K, $30K**
+- contributions are added at the **end of each simulated year**
 
 Returns are sampled independently from a normal distribution and clipped so a simulated annual loss cannot fall below -95%.
+
+Each contribution scenario uses the same random seed. That means the scenarios are compared against the same sequence of simulated market conditions, which makes the contribution-level comparison less noisy.
 
 ## Results
 
